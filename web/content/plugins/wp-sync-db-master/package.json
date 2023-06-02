@@ -1,0 +1,34 @@
+{
+  "name": "wp-sync-db",
+  "description": "Migrate database data between WordPress instances",
+  "version": "1.6.0",
+  "author": "Daniel M. Hendricks",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/cloudverve/wp-sync-db",
+  "private": true,
+  "scripts": {
+    "translate": "wp-pot -s './**/*.php' -o ./languages/$npm_package_name.pot -p $npm_package_name",
+    "zip": "zip -q -r ../$npm_package_name-$npm_package_version.zip * -x 'node_modules/*' 'asset/images/*' 'src/*' '.git*' './.*' './composer.*' './package*' './*.md' './*.yml' './*.sh' './gulpfile.js' "
+  },
+  "devDependencies": {
+    "gulp": "^4.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-line-ending-corrector": "^1.0.2",
+    "gulp-cache": "^1.0.2",
+    "gulp-notify": "^3.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "wp-pot-cli": "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudverve/wp-sync-db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudverve/wp-sync-db/issues"
+  }
+}
